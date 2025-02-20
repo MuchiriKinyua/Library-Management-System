@@ -46,3 +46,9 @@ Route::resource('reservations', App\Http\Controllers\ReservationController::clas
 Route::resource('resources', App\Http\Controllers\ResourceController::class);
 Route::resource('types', App\Http\Controllers\TypeController::class);
 Route::resource('waitings', App\Http\Controllers\WaitingController::class);
+Route::resource('schedules', App\Http\Controllers\ScheduleController::class);
+Route::resource('settings', App\Http\Controllers\SettingController::class);
+Route::resource('staff', App\Http\Controllers\StaffController::class);
+Route::resource('records', App\Http\Controllers\RecordController::class);
+Route::resource('reports', App\Http\Controllers\ReportController::class);
+Route::resource('predictions', App\Http\Controllers\PredictionController::class);
