@@ -40,7 +40,7 @@ Authentication: Laravel Breeze / Sanctum
 
 ## Clone the Repository
 
-    git clone https://github.com/your-repo/library-management.git
+    git clone https://github.com/MuchiriKinyua/library-management.git
 
 cd library-management
 
@@ -85,32 +85,6 @@ Admin: Full access to all modules.
 Librarian: Manage books, loans, and members.
 
 Member: Browse books, borrow, and view fines.
-
-# API Endpoints (For Future Development)
-
-Method
-
-Endpoint
-
-Description
-
-GET
-
-/api/books
-
-Get all books
-
-POST
-
-/api/books
-
-Add a new book
-
-GET
-
-/api/members
-
-Get all members
 
 # Future Enhancements
 
