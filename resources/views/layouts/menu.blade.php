@@ -265,7 +265,7 @@
 </li>
 
 <li class="nav-item has-treeview {{ Request::is('roles*') || Request::is('permissions*') || Request::is('user*') ? 'menu-open' : '' }}">
-    <a href="#" class="nav-link {{ Request::is('roles*') || Request::is('permissions*') || Request::is('user*') ? 'active' : '' }}">
+    <a href="#" class="nav-link {{ Request::is('roles*') || Request::is('permissions*') || Request::is('user*') ? 'active' : '' }} text-yellow">
         <i class="nav-icon fas fa-users-cog"></i>
         <p>
             Users and Controls
@@ -275,21 +275,21 @@
     <ul class="nav nav-treeview">
         <li class="nav-item">
             <a href="{{ route('roles.index') }}" class="nav-link {{ Request::is('roles*') ? 'active' : '' }}">
-                <i class="nav-icon fas fa-users-cog"></i>
+                <i class="nav-icon fas fa-users-cog text-green"></i>
                 <p>Roles</p>
             </a>
         </li>
 
         <li class="nav-item">
             <a href="{{ route('permissions.index') }}" class="nav-link {{ Request::is('permissions*') ? 'active' : '' }}">
-                <i class="nav-icon fas fa-key"></i>
+                <i class="nav-icon fas fa-key text-green"></i>
                 <p>Permissions</p>
             </a>
         </li>
 
         <li class="nav-item">
             <a href="{{ route('users.index') }}" class="nav-link {{ Request::is('user*') ? 'active' : '' }}">
-                <i class="nav-icon fas fa-users"></i>
+                <i class="nav-icon fas fa-users text-green"></i>
                 <p>Users</p>
             </a>
         </li>
