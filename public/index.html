@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <title>UON Library</title>
+    <title>Liberty NFT Marketplace - HTML CSS Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,6 @@ https://templatemo.com/tm-577-liberty-market
                         <img src="assets/images/logo.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
-
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
@@ -64,93 +63,16 @@ https://templatemo.com/tm-577-liberty-market
                         <li><a href="details.html">Item Details</a></li>
                         <li><a href="author.html">Author</a></li>
                         <li><a href="create.html">Create Yours</a></li>
-
-                        @if (Route::has('login'))
-                            @auth
-                                <li class="relative">
-                                    <button id="userMenuButton" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-full px-4 py-2 text-xs">
-                                        {{ Auth::user()->name }} ▼
-                                    </button>
-
-                                    <ul id="userMenu" class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full shadow-lg overflow-hidden">
-                                        <li><a href="{{ route('profile') }}" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Profile</a></li>
-                                        <li>
-                                            <form method="POST" action="{{ route('logout') }}">
-                                                @csrf
-                                                <button type="submit" class="w-full text-left block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm">Logout</button>
-                                            </form>
-                                        </li>
-                                    </ul>
-                                </li>
-                            @else
-                                <li><a href="{{ route('login') }}" class="font-semibold text-xs">Log in</a></li>
-                                @if (Route::has('register'))
-                                    <li><a href="{{ route('register') }}" class="font-semibold text-xs">Register</a></li>
-                                @endif
-                            @endauth
-                        @endif
                     </ul>   
-
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    
                     <!-- ***** Menu End ***** -->
                 </nav>
             </div>
         </div>
     </div>
-</header>
-
-<!-- JavaScript for Dropdown Toggle -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const button = document.getElementById("userMenuButton");
-        const menu = document.getElementById("userMenu");
-
-        if (button) {
-            button.addEventListener("click", function (event) {
-                event.stopPropagation();
-                menu.classList.toggle("hidden");
-            });
-
-            document.addEventListener("click", function (event) {
-                if (!menu.contains(event.target) && !button.contains(event.target)) {
-                    menu.classList.add("hidden");
-                }
-            });
-        }
-    });
-</script>
-
-
-<!-- JavaScript for Dropdown Toggle -->
-
-
-
-<!-- JavaScript for Dropdown Toggle -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const button = document.getElementById("userMenuButton");
-        const menu = document.getElementById("userMenu");
-
-        if (button) {
-            button.addEventListener("click", function (event) {
-                event.stopPropagation();
-                menu.classList.toggle("hidden");
-            });
-
-            document.addEventListener("click", function () {
-                menu.classList.add("hidden");
-            });
-
-            menu.addEventListener("click", function (event) {
-                event.stopPropagation();
-            });
-        }
-    });
-</script>
-
+  </header>
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
@@ -395,6 +317,19 @@ https://templatemo.com/tm-577-liberty-market
       </div>
     </div>
   </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a target="_blank" href="https://www.youtube.com/channel/UCeNYDojo4nU2sbHz1sMsBXw">Web Tech Knowledge
+          &nbsp;&nbsp;
+          Designed by <a title="HTML CSS Templates" rel="sponsored" href="https://www.youtube.com/channel/UCeNYDojo4nU2sbHz1sMsBXw" target="_blank">Web Tech Knowledge</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
