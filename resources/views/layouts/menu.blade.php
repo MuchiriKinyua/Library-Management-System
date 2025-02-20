@@ -1,8 +1,15 @@
 <!-- need to remove -->
 <li class="nav-item">
     <a href="{{ route('home') }}" class="nav-link {{ Request::is('home') ? 'active' : '' }} text-yellow">
-        <i class="nav-icon fas fa-home text-yellow"></i>
-        <p>Dashboard</p>
+        <i class="nav-icon fas fa-tachometer-alt text-yellow"></i>
+        <p>Admin Dashboard</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="#" class="nav-link text-yellow">
+        <i class="nav-icon fas fa-book-open text-yellow"></i>
+        <p>Librarian Dashboard</p>
     </a>
 </li>
 
@@ -166,15 +173,15 @@
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item">
-            <a href="{{ route('schedules.index') }}" class="nav-link {{ Request::is('schedules*') ? 'active' : '' }}">
-                <i class="nav-icon fas fa-clock text-green"></i>
-                <p>Schedules</p>
+            <a href="{{ route('staff.index') }}" class="nav-link {{ Request::is('staff*') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-users text-green"></i>
+                <p>Librarians</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{ route('staff.index') }}" class="nav-link {{ Request::is('staff*') ? 'active' : '' }}">
-                <i class="nav-icon fas fa-users text-green"></i>
-                <p>Staff</p>
+            <a href="{{ route('schedules.index') }}" class="nav-link {{ Request::is('schedules*') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-clock text-green"></i>
+                <p>Schedules</p>
             </a>
         </li>
     </ul>
@@ -231,8 +238,20 @@
                 <p>System Settings</p>
             </a>
         </li>
+    </ul>
+</li>
+
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link text-yellow">
+        <i class="nav-icon fas fa-shield-alt"></i>
+        <p>
+            System Audits
+            <i class="right fas fa-angle-left"></i>
+        </p>
+    </a>
+    <ul class="nav nav-treeview">
         <li class="nav-item">
-            <a href="{{ route('logs.index') }}" class="nav-link {{ Request::is('logs*') ? 'active' : '' }}">
+            <a href="{{ route('logs.index') }}" class="nav-link">
                 <i class="nav-icon fas fa-file-alt text-green"></i>
                 <p>Audit Logs</p>
             </a>
