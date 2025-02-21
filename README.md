@@ -6,7 +6,7 @@
 
 The Library Management System is a web-based application designed to efficiently manage library operations such as book inventory, member records, borrowings, and reservations. Built with Laravel, it ensures seamless book tracking, digital resource management, and fine processing.
 
-![Screenshot from 2025-02-20 20-29-57](https://github.com/user-attachments/assets/25365fd2-8597-4aa7-845d-99ba824b7b4a)
+![Screenshot from 2025-02-21 07-38-10](https://github.com/user-attachments/assets/f7a0b9ac-e5e2-4a56-8aac-feed22aee53d)
 
 # Features
 
