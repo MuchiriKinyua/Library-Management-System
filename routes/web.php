@@ -4,8 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\PermissionController;
-use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -55,6 +53,6 @@ Route::resource('staff', App\Http\Controllers\StaffController::class);
 Route::resource('records', App\Http\Controllers\RecordController::class);
 Route::resource('reports', App\Http\Controllers\ReportController::class);
 Route::resource('predictions', App\Http\Controllers\PredictionController::class);
+Route::resource('users', UserController::class);
 Route::resource('roles', App\Http\Controllers\RoleController::class);
 Route::resource('permissions', App\Http\Controllers\PermissionController::class);
-Route::resource('users', UserController::class);
