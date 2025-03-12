@@ -1,6 +1,6 @@
 # Library Management System
 
-![Screenshot from 2025-02-20 19-19-08](https://github.com/user-attachments/assets/dddbc775-7ab1-47f5-b4c4-97b260ab2a17)
+![Screenshot from 2025-03-12 14-46-03](https://github.com/user-attachments/assets/5700c121-b4be-4921-9f15-fd1207ba1983)
 
 # Overview
 
